@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message app</title>
+    <link rel="stylesheet" href="/static/mess.css">
+    <script defer src="/static/mess.js"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/static/socket-mess.js"></script>
+</head>
+
+<body>
+    <div class="cointainer">
+        <div>
+            <h1 class="heading">Chat It</h1>
+            <span class="name"></span>
+        </div>
+        <div class="message_con">
+            <div class="notify center">
+                welcome to chat
+            </div>
+
+        </div>
+        <div class="send_me">
+            <!-- form to send message -->
+            <form action="">
+                <input type="text" id="message_input" autocapitalize="off" autofocus placeholder="Type your message..." autocomplete="off" />
+                <button id="btn" class="hidden">Send</button>
+            </form>
+        </div>
+    </div>
+    <audio src="/static/ting.mp3"></audio>
+</body>
+
+</html>

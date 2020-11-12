@@ -1,0 +1,136 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1.heading {
+    text-align: center;
+    color: white;
+}
+
+div span.name {
+    position: relative;
+    top: -10px;
+    left: 87%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/* message box*/
+
+.cointainer {
+    /* to place it some where you wanna be place the  */
+    max-width: 700px;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #34495e;
+}
+
+.message_con {
+    /* change height according to need */
+    height: 70vh;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ecf0f1;
+}
+
+.notify {
+    margin-bottom: 4.5px;
+}
+
+.message {
+    font-size: 0.9rem;
+    background-color: white;
+    color: black;
+    transform: translate(0, 0);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px 5px 3px 5px;
+    width: fit-content;
+    border: 0.2px solid black;
+    max-width: 70%;
+    min-width: 15%;
+    box-shadow: 1px 2px 5px 0px rgba(51, 51, 51, 0.5);
+}
+
+.message>span {
+    font-size: 0.7em;
+    color: rgb(139, 139, 139);
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+
+
+/* message representaion */
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.center {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(139, 139, 139);
+}
+
+
+/* form input and button  */
+
+.send_me {
+    height: 30px
+}
+
+form {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 2px;
+    padding: 1.5px;
+}
+
+input#message_input {
+    float: left;
+    padding-left: 5px;
+    padding-right: 45px;
+    width: 100%;
+    height: 30px;
+    outline: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input#message_input::placeholder {
+    text-align: center;
+}
+
+#btn {
+    float: right;
+    transform: translate(0, -28px);
+    cursor: pointer;
+    color: rgb(0, 129, 209);
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 5.5px 10px;
+    background-color: transparent;
+}
+
+.hidden {
+    visibility: hidden;
+}
