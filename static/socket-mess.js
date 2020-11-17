@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (input_tag.value.trim() != '') {
         message('you', input_tag.value, 'right')
-    }
+    
 
     // scroll to bottom on every mew message
     mess_cointainer.scrollTop = mess_cointainer.scrollHeight;
@@ -29,6 +29,7 @@ form.addEventListener('submit', (e) => {
 
     // clear the input box
     input_tag.value = ''
+    }
 
     // hidden the submit button
     send_btn.classList.add('hidden')
